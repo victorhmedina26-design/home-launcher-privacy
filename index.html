@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de privacidad — Home Launcher</title>
+    <style>
+      :root { color-scheme: light dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+      body { margin: 0; background: #0d1020; color: #f4f5fb; }
+      main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0 96px; }
+      h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.04em; }
+      h2 { margin-top: 36px; font-size: 1.2rem; }
+      p { color: #c7cad9; line-height: 1.7; }
+      .date { color: #8f95ad; }
+      code { padding: .15em .4em; border-radius: .4em; background: #20243a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Política de privacidad de Home Launcher</h1>
+      <p class="date">Última actualización: 18 de noviembre de 2026</p>
+      <p>Home Launcher sustituye la página de nueva pestaña por un launcher visual personalizable. Esta política explica cómo se tratan los datos dentro de la extensión.</p>
+      <h2>Datos que trata la extensión</h2>
+      <p>La extensión permite introducir nombres y direcciones de sitios web, organizar accesos y carpetas, seleccionar imágenes para iconos o fondos y modificar preferencias visuales. Esta información se procesa únicamente para proporcionar las funciones visibles de la extensión.</p>
+      <h2>Almacenamiento local</h2>
+      <p>Los accesos, carpetas y preferencias se guardan mediante <code>chrome.storage.local</code>. Las imágenes personalizadas se guardan en IndexedDB dentro del perfil local del navegador. El usuario puede exportar voluntariamente una copia de seguridad a un archivo local.</p>
+      <p>Opcionalmente, el usuario puede activar copias diarias completas en una carpeta local que selecciona y autoriza. La extensión recuerda el acceso a esa carpeta y la fecha de la última copia en IndexedDB, sin transmitirlos. Solo escribe sus archivos de copia; no examina otros documentos ni elimina copias anteriores. Los archivos externos permanecen al desinstalar y el usuario puede desactivar la función o eliminarlos manualmente.</p>
+      <h2>Recopilación y transmisión</h2>
+      <p>El desarrollador no recopila, recibe ni almacena datos personales, accesos, imágenes, búsquedas, historial o preferencias. La extensión no utiliza analítica, publicidad, cuentas de usuario ni servidores del desarrollador.</p>
+      <p>Las búsquedas se envían al motor predeterminado de Chrome mediante <code>chrome.search</code>. Si un favicon no está en la caché interna de Chrome, el navegador puede solicitarlo directamente al sitio añadido por el usuario. El desarrollador no recibe estas comunicaciones.</p>
+      <h2>Compartición y venta</h2>
+      <p>El desarrollador no vende, comparte ni utiliza datos para publicidad, perfilado, evaluación crediticia o finalidades distintas de las funciones descritas.</p>
+      <h2>Control del usuario</h2>
+      <p>El usuario puede editar o eliminar sus accesos, carpetas e imágenes, restaurar los valores iniciales o desinstalar la extensión.</p>
+      <h2>Seguridad</h2>
+      <p>Home Launcher utiliza Manifest V3, no ejecuta código remoto y solicita únicamente permisos de almacenamiento local, favicons y búsqueda con el proveedor predeterminado.</p>
+      <h2>Contacto</h2>
+      <p>Antes de publicar, sustituye este texto por un correo de soporte válido.</p>
+    </main>
+  </body>
+</html>
